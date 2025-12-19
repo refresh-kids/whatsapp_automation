@@ -1,0 +1,6 @@
+teacher_name,student_name,phone_number,message,meeting_date,meeting_time,status,sent_at
+John Smith,Alice Johnson,14155551234,"Hi {{student_name}}, this is a reminder that you have a meeting with {{teacher_name}} scheduled for {{meeting_date}} at {{meeting_time}}. Please be on time!",2025-12-20,14:30,Pending,
+Dr. Sarah Lee,Bob Williams,447911123456,"Hello {{student_name}}, your session with {{teacher_name}} is at {{meeting_time}} today. Looking forward to seeing you!",2025-12-20,15:00,Pending,
+Prof. Mike Chen,Carol Davis,919876543210,"Dear {{student_name}}, this is to remind you about your meeting scheduled for {{meeting_date}} at {{meeting_time}} with {{teacher_name}}. Please bring your notes.",2025-12-21,10:00,Pending,
+Jane Doe,David Brown,14165551234,"Hey {{student_name}}! Quick reminder about your session with {{teacher_name}} on {{meeting_date}} at {{meeting_time}}. See you there!",2025-12-21,16:30,Pending,
+Robert Wilson,Emma Taylor,61412345678,"Hi {{student_name}}, your appointment with {{teacher_name}} is coming up on {{meeting_date}} at {{meeting_time}}. Please confirm your attendance.",2025-12-22,09:00,Pending,

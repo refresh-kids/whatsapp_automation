@@ -1,0 +1,84 @@
+# License
+
+ISC License
+
+Copyright (c) 2025 WhatsApp Automation Project
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+## Third-Party Licenses
+
+This project uses the following open-source packages:
+
+### Backend Dependencies
+
+- **Express.js** - MIT License
+- **Google APIs** - Apache License 2.0
+- **Axios** - MIT License
+- **Node Cron** - ISC License
+- **JWT** - MIT License
+- **bcryptjs** - MIT License
+- **Helmet** - MIT License
+- **CORS** - MIT License
+- **dotenv** - BSD-2-Clause License
+
+### Frontend Dependencies
+
+- **React** - MIT License
+- **React Router** - MIT License
+- **Vite** - MIT License
+- **Tailwind CSS** - MIT License
+- **date-fns** - MIT License
+
+---
+
+## API Services
+
+### Google Sheets API
+Subject to Google APIs Terms of Service
+https://developers.google.com/terms
+
+### WhatsApp Cloud API
+Subject to Meta Platform Terms and WhatsApp Business Terms
+https://developers.facebook.com/terms
+https://www.whatsapp.com/legal/business-terms
+
+---
+
+## Disclaimer
+
+This software is provided for educational and business purposes. Users are responsible for:
+
+1. Complying with WhatsApp Business Terms of Service
+2. Complying with Google APIs Terms of Service
+3. Following data privacy regulations (GDPR, CCPA, etc.)
+4. Obtaining proper consent for sending messages
+5. Using the software responsibly and ethically
+
+The developers are not responsible for:
+- Misuse of the software
+- Violations of third-party terms of service
+- Data breaches or security incidents
+- Any damages resulting from the use of this software
+
+---
+
+## Contributions
+
+By contributing to this project, you agree to license your contributions under the same ISC License.
+
+---
+
+**Last Updated:** December 2025
