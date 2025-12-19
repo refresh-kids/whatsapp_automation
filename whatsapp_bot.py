@@ -103,8 +103,8 @@ class WhatsAppAutomation:
         qr_wait_time = self.config.getint('Settings', 'qr_wait_time', fallback=30)
         try:
             # Wait for the main page to load (search box appears after login)
-            self.wait = WebDriverWait(self.driver, qr_wait_time)
-            self.wait.until(EC.presence_of_element_located(
+            qr_wait = WebDriverWait(self.driver, qr_wait_time)
+            qr_wait.until(EC.presence_of_element_located(
                 (By.XPATH, '//div[@contenteditable="true"][@data-tab="3"]')
             ))
             print("Successfully logged in to WhatsApp Web!")
@@ -131,18 +131,28 @@ class WhatsAppAutomation:
                 (By.XPATH, '//div[@contenteditable="true"][@data-tab="3"]')
             ))
             search_box.click()
-            time.sleep(0.5)
+            
+            # Wait for search box to be active
+            self.wait.until(EC.element_to_be_clickable(
+                (By.XPATH, '//div[@contenteditable="true"][@data-tab="3"]')
+            ))
             
             # Type contact name
             search_box.send_keys(contact_name)
-            time.sleep(1)
+            
+            # Wait for search results to appear
+            time.sleep(1)  # Brief wait for search to process
             
             # Click on the first result
             contact = self.wait.until(EC.presence_of_element_located(
                 (By.XPATH, f'//span[@title="{contact_name}"]')
             ))
             contact.click()
-            time.sleep(1)
+            
+            # Wait for chat to load
+            self.wait.until(EC.presence_of_element_located(
+                (By.XPATH, '//div[@contenteditable="true"][@data-tab="10"]')
+            ))
             
             print(f"Contact '{contact_name}' selected successfully.")
             return True
